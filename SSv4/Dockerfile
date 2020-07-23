@@ -2,8 +2,8 @@ FROM ubuntu:18.04
 
 MAINTAINER Jim-tech <xx@xx>
 
-COPY .vim /root/
-COPY .vimrc /root/
+#COPY .vim /root/
+#COPY .vimrc /root/
 COPY sources.list /etc/apt/sources.list
 
 RUN apt-get clean
