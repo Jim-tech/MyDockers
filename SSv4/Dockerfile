@@ -19,7 +19,7 @@ RUN echo 'if [ ! -e /tmp/.ssh_service ]; then' >> /etc/bash.bashrc
 RUN echo '    echo 1 > /tmp/.ssh_service' >> /etc/bash.bashrc
 RUN echo '    /etc/init.d/ssh start' >> /etc/bash.bashrc
 RUN echo 'fi' >> /etc/bash.bashrc
-RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# RUN git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
 RUN axel -a -n 8 -o /opt/ https://www.silabs.com/documents/login/software/SimplicityStudio-v4.tgz
